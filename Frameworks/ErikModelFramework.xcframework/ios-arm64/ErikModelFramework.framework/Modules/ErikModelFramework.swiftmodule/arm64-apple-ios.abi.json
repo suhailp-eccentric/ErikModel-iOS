@@ -1,0 +1,3821 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ErikModelFramework",
+    "printedName": "ErikModelFramework",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ErikModelFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftGodot",
+        "printedName": "SwiftGodot",
+        "declKind": "Import",
+        "moduleName": "ErikModelFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftGodotKit",
+        "printedName": "SwiftGodotKit",
+        "declKind": "Import",
+        "moduleName": "ErikModelFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AppPlugin",
+        "printedName": "AppPlugin",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppPlugin",
+                "printedName": "ErikModelFramework.AppPlugin",
+                "usr": "s:18ErikModelFramework9AppPluginC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC6sharedACvpZ",
+            "mangledName": "$s18ErikModelFramework9AppPluginC6sharedACvpZ",
+            "moduleName": "ErikModelFramework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AppPlugin",
+                    "printedName": "ErikModelFramework.AppPlugin",
+                    "usr": "s:18ErikModelFramework9AppPluginC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC6sharedACvgZ",
+                "mangledName": "$s18ErikModelFramework9AppPluginC6sharedACvgZ",
+                "moduleName": "ErikModelFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "plugin",
+            "printedName": "plugin",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ErikModelFramework.AppPlugin?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AppPlugin",
+                    "printedName": "ErikModelFramework.AppPlugin",
+                    "usr": "s:18ErikModelFramework9AppPluginC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC6pluginACSgvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC6pluginACSgvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ErikModelFramework.AppPlugin?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AppPlugin",
+                        "printedName": "ErikModelFramework.AppPlugin",
+                        "usr": "s:18ErikModelFramework9AppPluginC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC6pluginACSgvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC6pluginACSgvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isPluginRegistered",
+            "printedName": "isPluginRegistered",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC02isE10RegisteredSbvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC02isE10RegisteredSbvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC02isE10RegisteredSbvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC02isE10RegisteredSbvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "framework",
+            "printedName": "framework",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "ErikModelFramework.ErikModelFramework?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC9frameworkA2ACSgvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC9frameworkA2ACSgvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 0,
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ErikModelFramework.ErikModelFramework?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErikModelFramework",
+                        "printedName": "ErikModelFramework.ErikModelFramework",
+                        "usr": "s:18ErikModelFrameworkAAC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC9frameworkA2ACSgvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC9frameworkA2ACSgvg",
+                "moduleName": "ErikModelFramework",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ErikModelFramework.ErikModelFramework?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErikModelFramework",
+                        "printedName": "ErikModelFramework.ErikModelFramework",
+                        "usr": "s:18ErikModelFrameworkAAC"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC9frameworkA2ACSgvs",
+                "mangledName": "$s18ErikModelFramework9AppPluginC9frameworkA2ACSgvs",
+                "moduleName": "ErikModelFramework",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC9frameworkA2ACSgvM",
+                "mangledName": "$s18ErikModelFramework9AppPluginC9frameworkA2ACSgvM",
+                "moduleName": "ErikModelFramework",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "setCamera",
+            "printedName": "setCamera",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{Swift.String}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC9setCamera10SwiftGodot19SignalWithArgumentsVySS_QPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC9setCamera10SwiftGodot19SignalWithArgumentsVySS_QPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{Swift.String}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC9setCamera10SwiftGodot19SignalWithArgumentsVySS_QPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC9setCamera10SwiftGodot19SignalWithArgumentsVySS_QPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggle_door_front_right",
+            "printedName": "toggle_door_front_right",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC23toggle_door_front_right10SwiftGodot19SignalWithArgumentsVyyQPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC23toggle_door_front_right10SwiftGodot19SignalWithArgumentsVyyQPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC23toggle_door_front_right10SwiftGodot19SignalWithArgumentsVyyQPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC23toggle_door_front_right10SwiftGodot19SignalWithArgumentsVyyQPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggle_door_front_left",
+            "printedName": "toggle_door_front_left",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC22toggle_door_front_left10SwiftGodot19SignalWithArgumentsVyyQPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC22toggle_door_front_left10SwiftGodot19SignalWithArgumentsVyyQPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC22toggle_door_front_left10SwiftGodot19SignalWithArgumentsVyyQPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC22toggle_door_front_left10SwiftGodot19SignalWithArgumentsVyyQPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggle_door_rear_right",
+            "printedName": "toggle_door_rear_right",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC22toggle_door_rear_right10SwiftGodot19SignalWithArgumentsVyyQPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC22toggle_door_rear_right10SwiftGodot19SignalWithArgumentsVyyQPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC22toggle_door_rear_right10SwiftGodot19SignalWithArgumentsVyyQPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC22toggle_door_rear_right10SwiftGodot19SignalWithArgumentsVyyQPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggle_door_rear_left",
+            "printedName": "toggle_door_rear_left",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC21toggle_door_rear_left10SwiftGodot19SignalWithArgumentsVyyQPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC21toggle_door_rear_left10SwiftGodot19SignalWithArgumentsVyyQPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC21toggle_door_rear_left10SwiftGodot19SignalWithArgumentsVyyQPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC21toggle_door_rear_left10SwiftGodot19SignalWithArgumentsVyyQPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggle_door_boot_door",
+            "printedName": "toggle_door_boot_door",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC017toggle_door_boot_G010SwiftGodot19SignalWithArgumentsVyyQPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC017toggle_door_boot_G010SwiftGodot19SignalWithArgumentsVyyQPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC017toggle_door_boot_G010SwiftGodot19SignalWithArgumentsVyyQPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC017toggle_door_boot_G010SwiftGodot19SignalWithArgumentsVyyQPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "set_door_state",
+            "printedName": "set_door_state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<Swift.String, Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{Swift.String, Swift.Bool}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC14set_door_state10SwiftGodot19SignalWithArgumentsVySS_SbQPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC14set_door_state10SwiftGodot19SignalWithArgumentsVySS_SbQPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<Swift.String, Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{Swift.String, Swift.Bool}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC14set_door_state10SwiftGodot19SignalWithArgumentsVySS_SbQPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC14set_door_state10SwiftGodot19SignalWithArgumentsVySS_SbQPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggle_head_lamps",
+            "printedName": "toggle_head_lamps",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{Swift.Bool}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC17toggle_head_lamps10SwiftGodot19SignalWithArgumentsVySb_QPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC17toggle_head_lamps10SwiftGodot19SignalWithArgumentsVySb_QPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{Swift.Bool}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC17toggle_head_lamps10SwiftGodot19SignalWithArgumentsVySb_QPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC17toggle_head_lamps10SwiftGodot19SignalWithArgumentsVySb_QPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggle_light_rear",
+            "printedName": "toggle_light_rear",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{Swift.Bool}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC17toggle_light_rear10SwiftGodot19SignalWithArgumentsVySb_QPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC17toggle_light_rear10SwiftGodot19SignalWithArgumentsVySb_QPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{Swift.Bool}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC17toggle_light_rear10SwiftGodot19SignalWithArgumentsVySb_QPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC17toggle_light_rear10SwiftGodot19SignalWithArgumentsVySb_QPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggle_sunroof",
+            "printedName": "toggle_sunroof",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{Swift.Bool}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC14toggle_sunroof10SwiftGodot19SignalWithArgumentsVySb_QPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC14toggle_sunroof10SwiftGodot19SignalWithArgumentsVySb_QPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{Swift.Bool}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC14toggle_sunroof10SwiftGodot19SignalWithArgumentsVySb_QPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC14toggle_sunroof10SwiftGodot19SignalWithArgumentsVySb_QPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggle_ambient",
+            "printedName": "toggle_ambient",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{Swift.Bool}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC14toggle_ambient10SwiftGodot19SignalWithArgumentsVySb_QPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC14toggle_ambient10SwiftGodot19SignalWithArgumentsVySb_QPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{Swift.Bool}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC14toggle_ambient10SwiftGodot19SignalWithArgumentsVySb_QPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC14toggle_ambient10SwiftGodot19SignalWithArgumentsVySb_QPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ambient_hex_value",
+            "printedName": "ambient_hex_value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{Swift.String}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC17ambient_hex_value10SwiftGodot19SignalWithArgumentsVySS_QPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC17ambient_hex_value10SwiftGodot19SignalWithArgumentsVySS_QPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{Swift.String}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC17ambient_hex_value10SwiftGodot19SignalWithArgumentsVySS_QPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC17ambient_hex_value10SwiftGodot19SignalWithArgumentsVySS_QPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "is_hotspot_visible",
+            "printedName": "is_hotspot_visible",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{Swift.Bool}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC18is_hotspot_visible10SwiftGodot19SignalWithArgumentsVySb_QPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC18is_hotspot_visible10SwiftGodot19SignalWithArgumentsVySb_QPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{Swift.Bool}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC18is_hotspot_visible10SwiftGodot19SignalWithArgumentsVySb_QPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC18is_hotspot_visible10SwiftGodot19SignalWithArgumentsVySb_QPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "toggleACFlow",
+            "printedName": "toggleACFlow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<Swift.Bool>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{Swift.Bool}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC12toggleACFlow10SwiftGodot19SignalWithArgumentsVySb_QPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC12toggleACFlow10SwiftGodot19SignalWithArgumentsVySb_QPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<Swift.Bool>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{Swift.Bool}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC12toggleACFlow10SwiftGodot19SignalWithArgumentsVySb_QPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC12toggleACFlow10SwiftGodot19SignalWithArgumentsVySb_QPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ac_speed_control",
+            "printedName": "ac_speed_control",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<Swift.String>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{Swift.String}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC16ac_speed_control10SwiftGodot19SignalWithArgumentsVySS_QPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC16ac_speed_control10SwiftGodot19SignalWithArgumentsVySS_QPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<Swift.String>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{Swift.String}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC16ac_speed_control10SwiftGodot19SignalWithArgumentsVySS_QPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC16ac_speed_control10SwiftGodot19SignalWithArgumentsVySS_QPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ventillation_temperature",
+            "printedName": "ventillation_temperature",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<Swift.Int>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{Swift.Int}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC24ventillation_temperature10SwiftGodot19SignalWithArgumentsVySi_QPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC24ventillation_temperature10SwiftGodot19SignalWithArgumentsVySi_QPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<Swift.Int>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{Swift.Int}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC24ventillation_temperature10SwiftGodot19SignalWithArgumentsVySi_QPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC24ventillation_temperature10SwiftGodot19SignalWithArgumentsVySi_QPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "reset_scene",
+            "printedName": "reset_scene",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SignalWithArguments",
+                "printedName": "SwiftGodot.SignalWithArguments<>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Pack",
+                    "printedName": "Pack{}"
+                  }
+                ],
+                "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC11reset_scene10SwiftGodot19SignalWithArgumentsVyyQPGvp",
+            "mangledName": "$s18ErikModelFramework9AppPluginC11reset_scene10SwiftGodot19SignalWithArgumentsVyyQPGvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SignalWithArguments",
+                    "printedName": "SwiftGodot.SignalWithArguments<>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Pack",
+                        "printedName": "Pack{}"
+                      }
+                    ],
+                    "usr": "s:10SwiftGodot19SignalWithArgumentsV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC11reset_scene10SwiftGodot19SignalWithArgumentsVyyQPGvg",
+                "mangledName": "$s18ErikModelFramework9AppPluginC11reset_scene10SwiftGodot19SignalWithArgumentsVyyQPGvg",
+                "moduleName": "ErikModelFramework",
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "onRearLightsToggled",
+            "printedName": "onRearLightsToggled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC19onRearLightsToggledyySbF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC19onRearLightsToggledyySbF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onHeadLampsToggled",
+            "printedName": "onHeadLampsToggled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC18onHeadLampsToggledyySbF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC18onHeadLampsToggledyySbF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAcFlowToggled",
+            "printedName": "onAcFlowToggled(isOn:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC15onAcFlowToggled4isOn7messageySb_SStF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC15onAcFlowToggled4isOn7messageySb_SStF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDoorStateChanged",
+            "printedName": "onDoorStateChanged(doorType:isOpen:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC18onDoorStateChanged8doorType6isOpenySS_SbtF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC18onDoorStateChanged8doorType6isOpenySS_SbtF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSunroofToggled",
+            "printedName": "onSunroofToggled(isOpen:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC16onSunroofToggled6isOpenySb_tF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC16onSunroofToggled6isOpenySb_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ventilationTempFeedback",
+            "printedName": "ventilationTempFeedback(temperature:colorType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC23ventilationTempFeedback11temperature9colorTypeySi_SStF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC23ventilationTempFeedback11temperature9colorTypeySi_SStF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAmbientToggled",
+            "printedName": "onAmbientToggled(isOn:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC16onAmbientToggled4isOn7messageySb_SStF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC16onAmbientToggled4isOn7messageySb_SStF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAmbientColorSet",
+            "printedName": "onAmbientColorSet(hex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC17onAmbientColorSet3hexySS_tF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC17onAmbientColorSet3hexySS_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onCameraChanged",
+            "printedName": "onCameraChanged()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC15onCameraChangedyyF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC15onCameraChangedyyF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onHotspotVisibilityChanged",
+            "printedName": "onHotspotVisibilityChanged(visible:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC26onHotspotVisibilityChanged7visibleySb_tF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC26onHotspotVisibilityChanged7visibleySb_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "classInitializer",
+            "printedName": "classInitializer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework9AppPluginC16classInitializerytvpZ",
+            "mangledName": "$s18ErikModelFramework9AppPluginC16classInitializerytvpZ",
+            "moduleName": "ErikModelFramework",
+            "static": true,
+            "overriding": true,
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "Override"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework9AppPluginC16classInitializerytvgZ",
+                "mangledName": "$s18ErikModelFramework9AppPluginC16classInitializerytvgZ",
+                "moduleName": "ErikModelFramework",
+                "static": true,
+                "overriding": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nativeHandle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppPlugin",
+                "printedName": "ErikModelFramework.AppPlugin",
+                "usr": "s:18ErikModelFramework9AppPluginC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UnsafeRawPointer",
+                "printedName": "Swift.UnsafeRawPointer",
+                "usr": "s:SV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18ErikModelFramework9AppPluginC12nativeHandleACSV_tcfc",
+            "mangledName": "$s18ErikModelFramework9AppPluginC12nativeHandleACSV_tcfc",
+            "moduleName": "ErikModelFramework",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Required",
+              "UsableFromInline"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AppPlugin",
+                "printedName": "ErikModelFramework.AppPlugin",
+                "usr": "s:18ErikModelFramework9AppPluginC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18ErikModelFramework9AppPluginCACycfc",
+            "mangledName": "$s18ErikModelFramework9AppPluginCACycfc",
+            "moduleName": "ErikModelFramework",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Required",
+              "UsableFromInline"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "exteriorView",
+            "printedName": "exteriorView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC12exteriorViewyyF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC12exteriorViewyyF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interiorView",
+            "printedName": "interiorView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC12interiorViewyyF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC12interiorViewyyF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleDoor",
+            "printedName": "toggleDoor(_:isOpen:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CarDoor",
+                "printedName": "ErikModelFramework.CarDoor",
+                "usr": "s:18ErikModelFramework7CarDoorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC10toggleDoor_6isOpenyAA03CarG0O_SbtF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC10toggleDoor_6isOpenyAA03CarG0O_SbtF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleHeadLights",
+            "printedName": "toggleHeadLights(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC16toggleHeadLights4isOnySb_tF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC16toggleHeadLights4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleRearLights",
+            "printedName": "toggleRearLights(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC16toggleRearLights4isOnySb_tF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC16toggleRearLights4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleSunroof",
+            "printedName": "toggleSunroof(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC13toggleSunroof4isOnySb_tF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC13toggleSunroof4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleAmbient",
+            "printedName": "toggleAmbient(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC13toggleAmbient4isOnySb_tF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC13toggleAmbient4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAmbientColor",
+            "printedName": "setAmbientColor(hex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC15setAmbientColor3hexySS_tF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC15setAmbientColor3hexySS_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleHvac",
+            "printedName": "toggleHvac(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC10toggleHvac4isOnySb_tF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC10toggleHvac4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setHvacSpeed",
+            "printedName": "setHvacSpeed(speed:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC12setHvacSpeed5speedySS_tF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC12setHvacSpeed5speedySS_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setHvacTemperature",
+            "printedName": "setHvacTemperature(temperature:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC18setHvacTemperature11temperatureySi_tF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC18setHvacTemperature11temperatureySi_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetScene",
+            "printedName": "resetScene()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC10resetSceneyyF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC10resetSceneyyF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isHotspotVisible",
+            "printedName": "isHotspotVisible(isVisible:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework9AppPluginC16isHotspotVisible0fH0ySb_tF",
+            "mangledName": "$s18ErikModelFramework9AppPluginC16isHotspotVisible0fH0ySb_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18ErikModelFramework9AppPluginC",
+        "mangledName": "$s18ErikModelFramework9AppPluginC",
+        "moduleName": "ErikModelFramework",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "Custom"
+        ],
+        "superclassUsr": "s:10SwiftGodot6ObjectC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "SwiftGodot.Object",
+          "SwiftGodot.Wrapped"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_GodotBridgeable",
+            "printedName": "_GodotBridgeable",
+            "usr": "s:10SwiftGodot01_B10BridgeableP",
+            "mangledName": "$s10SwiftGodot01_B10BridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_GodotNullableBridgeable",
+            "printedName": "_GodotNullableBridgeable",
+            "usr": "s:10SwiftGodot01_B18NullableBridgeableP",
+            "mangledName": "$s10SwiftGodot01_B18NullableBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "VariantConvertible",
+            "printedName": "VariantConvertible",
+            "usr": "s:10SwiftGodot18VariantConvertibleP",
+            "mangledName": "$s10SwiftGodot18VariantConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "ErikModelFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftGodot",
+        "printedName": "SwiftGodot",
+        "declKind": "Import",
+        "moduleName": "ErikModelFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftGodotKit",
+        "printedName": "SwiftGodotKit",
+        "declKind": "Import",
+        "moduleName": "ErikModelFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CarModelView",
+        "printedName": "CarModelView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CarModelView",
+                "printedName": "ErikModelFramework.CarModelView",
+                "usr": "s:18ErikModelFramework03CarB4ViewV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18ErikModelFramework03CarB4ViewVACycfc",
+            "mangledName": "$s18ErikModelFramework03CarB4ViewVACycfc",
+            "moduleName": "ErikModelFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework03CarB4ViewV4bodyQrvp",
+            "mangledName": "$s18ErikModelFramework03CarB4ViewV4bodyQrvp",
+            "moduleName": "ErikModelFramework",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework03CarB4ViewV4bodyQrvg",
+                "mangledName": "$s18ErikModelFramework03CarB4ViewV4bodyQrvg",
+                "moduleName": "ErikModelFramework",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18ErikModelFramework03CarB4ViewV",
+        "mangledName": "$s18ErikModelFramework03CarB4ViewV",
+        "moduleName": "ErikModelFramework",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftGodot",
+        "printedName": "SwiftGodot",
+        "declKind": "Import",
+        "moduleName": "ErikModelFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftGodotKit",
+        "printedName": "SwiftGodotKit",
+        "declKind": "Import",
+        "moduleName": "ErikModelFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ErikModelFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CarDoor",
+        "printedName": "CarDoor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "FR",
+            "printedName": "FR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ErikModelFramework.CarDoor.Type) -> ErikModelFramework.CarDoor",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CarDoor",
+                    "printedName": "ErikModelFramework.CarDoor",
+                    "usr": "s:18ErikModelFramework7CarDoorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ErikModelFramework.CarDoor.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CarDoor",
+                        "printedName": "ErikModelFramework.CarDoor",
+                        "usr": "s:18ErikModelFramework7CarDoorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18ErikModelFramework7CarDoorO2FRyA2CmF",
+            "mangledName": "$s18ErikModelFramework7CarDoorO2FRyA2CmF",
+            "moduleName": "ErikModelFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "FL",
+            "printedName": "FL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ErikModelFramework.CarDoor.Type) -> ErikModelFramework.CarDoor",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CarDoor",
+                    "printedName": "ErikModelFramework.CarDoor",
+                    "usr": "s:18ErikModelFramework7CarDoorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ErikModelFramework.CarDoor.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CarDoor",
+                        "printedName": "ErikModelFramework.CarDoor",
+                        "usr": "s:18ErikModelFramework7CarDoorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18ErikModelFramework7CarDoorO2FLyA2CmF",
+            "mangledName": "$s18ErikModelFramework7CarDoorO2FLyA2CmF",
+            "moduleName": "ErikModelFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "RR",
+            "printedName": "RR",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ErikModelFramework.CarDoor.Type) -> ErikModelFramework.CarDoor",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CarDoor",
+                    "printedName": "ErikModelFramework.CarDoor",
+                    "usr": "s:18ErikModelFramework7CarDoorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ErikModelFramework.CarDoor.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CarDoor",
+                        "printedName": "ErikModelFramework.CarDoor",
+                        "usr": "s:18ErikModelFramework7CarDoorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18ErikModelFramework7CarDoorO2RRyA2CmF",
+            "mangledName": "$s18ErikModelFramework7CarDoorO2RRyA2CmF",
+            "moduleName": "ErikModelFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "RL",
+            "printedName": "RL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ErikModelFramework.CarDoor.Type) -> ErikModelFramework.CarDoor",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CarDoor",
+                    "printedName": "ErikModelFramework.CarDoor",
+                    "usr": "s:18ErikModelFramework7CarDoorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ErikModelFramework.CarDoor.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CarDoor",
+                        "printedName": "ErikModelFramework.CarDoor",
+                        "usr": "s:18ErikModelFramework7CarDoorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18ErikModelFramework7CarDoorO2RLyA2CmF",
+            "mangledName": "$s18ErikModelFramework7CarDoorO2RLyA2CmF",
+            "moduleName": "ErikModelFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "BOOT",
+            "printedName": "BOOT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ErikModelFramework.CarDoor.Type) -> ErikModelFramework.CarDoor",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CarDoor",
+                    "printedName": "ErikModelFramework.CarDoor",
+                    "usr": "s:18ErikModelFramework7CarDoorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ErikModelFramework.CarDoor.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CarDoor",
+                        "printedName": "ErikModelFramework.CarDoor",
+                        "usr": "s:18ErikModelFramework7CarDoorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18ErikModelFramework7CarDoorO4BOOTyA2CmF",
+            "mangledName": "$s18ErikModelFramework7CarDoorO4BOOTyA2CmF",
+            "moduleName": "ErikModelFramework"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CarDoor",
+                "printedName": "ErikModelFramework.CarDoor",
+                "usr": "s:18ErikModelFramework7CarDoorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CarDoor",
+                "printedName": "ErikModelFramework.CarDoor",
+                "usr": "s:18ErikModelFramework7CarDoorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework7CarDoorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18ErikModelFramework7CarDoorO2eeoiySbAC_ACtFZ",
+            "moduleName": "ErikModelFramework",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFramework7CarDoorO9hashValueSivp",
+            "mangledName": "$s18ErikModelFramework7CarDoorO9hashValueSivp",
+            "moduleName": "ErikModelFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFramework7CarDoorO9hashValueSivg",
+                "mangledName": "$s18ErikModelFramework7CarDoorO9hashValueSivg",
+                "moduleName": "ErikModelFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework7CarDoorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18ErikModelFramework7CarDoorO4hash4intoys6HasherVz_tF",
+            "moduleName": "ErikModelFramework",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18ErikModelFramework7CarDoorO",
+        "mangledName": "$s18ErikModelFramework7CarDoorO",
+        "moduleName": "ErikModelFramework",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ErikModelFrameworkDelegate",
+        "printedName": "ErikModelFrameworkDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onDoorStateChanged",
+            "printedName": "onDoorStateChanged(doorType:isOpen:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework0abC8DelegateP18onDoorStateChanged8doorType6isOpenySS_SbtF",
+            "mangledName": "$s18ErikModelFramework0abC8DelegateP18onDoorStateChanged8doorType6isOpenySS_SbtF",
+            "moduleName": "ErikModelFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "sugared_genericSig": "<Self where Self : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onSunroofToggled",
+            "printedName": "onSunroofToggled(isOpen:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework0abC8DelegateP16onSunroofToggled6isOpenySb_tF",
+            "mangledName": "$s18ErikModelFramework0abC8DelegateP16onSunroofToggled6isOpenySb_tF",
+            "moduleName": "ErikModelFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "sugared_genericSig": "<Self where Self : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onHeadLightsToggled",
+            "printedName": "onHeadLightsToggled(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework0abC8DelegateP19onHeadLightsToggled4isOnySb_tF",
+            "mangledName": "$s18ErikModelFramework0abC8DelegateP19onHeadLightsToggled4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "sugared_genericSig": "<Self where Self : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onRearLightsToggled",
+            "printedName": "onRearLightsToggled(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework0abC8DelegateP19onRearLightsToggled4isOnySb_tF",
+            "mangledName": "$s18ErikModelFramework0abC8DelegateP19onRearLightsToggled4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "sugared_genericSig": "<Self where Self : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAmbientToggled",
+            "printedName": "onAmbientToggled(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework0abC8DelegateP16onAmbientToggled4isOnySb_tF",
+            "mangledName": "$s18ErikModelFramework0abC8DelegateP16onAmbientToggled4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "sugared_genericSig": "<Self where Self : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onAmbientColorSet",
+            "printedName": "onAmbientColorSet(hex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework0abC8DelegateP17onAmbientColorSet3hexySS_tF",
+            "mangledName": "$s18ErikModelFramework0abC8DelegateP17onAmbientColorSet3hexySS_tF",
+            "moduleName": "ErikModelFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "sugared_genericSig": "<Self where Self : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onHvacToggled",
+            "printedName": "onHvacToggled(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework0abC8DelegateP13onHvacToggled4isOnySb_tF",
+            "mangledName": "$s18ErikModelFramework0abC8DelegateP13onHvacToggled4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "sugared_genericSig": "<Self where Self : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onHotspotVisibilityChange",
+            "printedName": "onHotspotVisibilityChange(isVisible:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework0abC8DelegateP25onHotspotVisibilityChange9isVisibleySb_tF",
+            "mangledName": "$s18ErikModelFramework0abC8DelegateP25onHotspotVisibilityChange9isVisibleySb_tF",
+            "moduleName": "ErikModelFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "sugared_genericSig": "<Self where Self : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onCameraChanged",
+            "printedName": "onCameraChanged()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework0abC8DelegateP15onCameraChangedyyF",
+            "mangledName": "$s18ErikModelFramework0abC8DelegateP15onCameraChangedyyF",
+            "moduleName": "ErikModelFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "sugared_genericSig": "<Self where Self : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onHvacTemperatureChange",
+            "printedName": "onHvacTemperatureChange(temperature:temperatureType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFramework0abC8DelegateP23onHvacTemperatureChange11temperature0I4TypeySi_SStF",
+            "mangledName": "$s18ErikModelFramework0abC8DelegateP23onHvacTemperatureChange11temperature0I4TypeySi_SStF",
+            "moduleName": "ErikModelFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "sugared_genericSig": "<Self where Self : ErikModelFramework.ErikModelFrameworkDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18ErikModelFramework0abC8DelegateP",
+        "mangledName": "$s18ErikModelFramework0abC8DelegateP",
+        "moduleName": "ErikModelFramework",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ErikModelFramework",
+        "printedName": "ErikModelFramework",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ErikModelFramework",
+                "printedName": "ErikModelFramework.ErikModelFramework",
+                "usr": "s:18ErikModelFrameworkAAC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFrameworkAAC6sharedABvpZ",
+            "mangledName": "$s18ErikModelFrameworkAAC6sharedABvpZ",
+            "moduleName": "ErikModelFramework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErikModelFramework",
+                    "printedName": "ErikModelFramework.ErikModelFramework",
+                    "usr": "s:18ErikModelFrameworkAAC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFrameworkAAC6sharedABvgZ",
+                "mangledName": "$s18ErikModelFrameworkAAC6sharedABvgZ",
+                "moduleName": "ErikModelFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ErikModelFramework",
+                    "printedName": "ErikModelFramework.ErikModelFramework",
+                    "usr": "s:18ErikModelFrameworkAAC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFrameworkAAC6sharedABvsZ",
+                "mangledName": "$s18ErikModelFrameworkAAC6sharedABvsZ",
+                "moduleName": "ErikModelFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFrameworkAAC6sharedABvMZ",
+                "mangledName": "$s18ErikModelFrameworkAAC6sharedABvMZ",
+                "moduleName": "ErikModelFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any ErikModelFramework.ErikModelFrameworkDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18ErikModelFrameworkAAC8delegateAA0abC8Delegate_pSgvp",
+            "mangledName": "$s18ErikModelFrameworkAAC8delegateAA0abC8Delegate_pSgvp",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ErikModelFramework.ErikModelFrameworkDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErikModelFrameworkDelegate",
+                        "printedName": "any ErikModelFramework.ErikModelFrameworkDelegate",
+                        "usr": "s:18ErikModelFramework0abC8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFrameworkAAC8delegateAA0abC8Delegate_pSgvg",
+                "mangledName": "$s18ErikModelFrameworkAAC8delegateAA0abC8Delegate_pSgvg",
+                "moduleName": "ErikModelFramework",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ErikModelFramework.ErikModelFrameworkDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ErikModelFrameworkDelegate",
+                        "printedName": "any ErikModelFramework.ErikModelFrameworkDelegate",
+                        "usr": "s:18ErikModelFramework0abC8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFrameworkAAC8delegateAA0abC8Delegate_pSgvs",
+                "mangledName": "$s18ErikModelFrameworkAAC8delegateAA0abC8Delegate_pSgvs",
+                "moduleName": "ErikModelFramework",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18ErikModelFrameworkAAC8delegateAA0abC8Delegate_pSgvM",
+                "mangledName": "$s18ErikModelFrameworkAAC8delegateAA0abC8Delegate_pSgvM",
+                "moduleName": "ErikModelFramework",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initializeEngine",
+            "printedName": "initializeEngine()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC16initializeEngineyyFZ",
+            "mangledName": "$s18ErikModelFrameworkAAC16initializeEngineyyFZ",
+            "moduleName": "ErikModelFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ErikModelFramework",
+                "printedName": "ErikModelFramework.ErikModelFramework",
+                "usr": "s:18ErikModelFrameworkAAC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18ErikModelFrameworkAACABycfc",
+            "mangledName": "$s18ErikModelFrameworkAACABycfc",
+            "moduleName": "ErikModelFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "exteriorView",
+            "printedName": "exteriorView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC12exteriorViewyyF",
+            "mangledName": "$s18ErikModelFrameworkAAC12exteriorViewyyF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "interiorView",
+            "printedName": "interiorView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC12interiorViewyyF",
+            "mangledName": "$s18ErikModelFrameworkAAC12interiorViewyyF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleDoor",
+            "printedName": "toggleDoor(_:isOpen:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CarDoor",
+                "printedName": "ErikModelFramework.CarDoor",
+                "usr": "s:18ErikModelFramework7CarDoorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC10toggleDoor_6isOpenyAA03CarE0O_SbtF",
+            "mangledName": "$s18ErikModelFrameworkAAC10toggleDoor_6isOpenyAA03CarE0O_SbtF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleHeadLights",
+            "printedName": "toggleHeadLights(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC16toggleHeadLights4isOnySb_tF",
+            "mangledName": "$s18ErikModelFrameworkAAC16toggleHeadLights4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleRearLights",
+            "printedName": "toggleRearLights(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC16toggleRearLights4isOnySb_tF",
+            "mangledName": "$s18ErikModelFrameworkAAC16toggleRearLights4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleSunroof",
+            "printedName": "toggleSunroof(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC13toggleSunroof4isOnySb_tF",
+            "mangledName": "$s18ErikModelFrameworkAAC13toggleSunroof4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleAmbient",
+            "printedName": "toggleAmbient(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC13toggleAmbient4isOnySb_tF",
+            "mangledName": "$s18ErikModelFrameworkAAC13toggleAmbient4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAmbientColor",
+            "printedName": "setAmbientColor(hex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC15setAmbientColor3hexySS_tF",
+            "mangledName": "$s18ErikModelFrameworkAAC15setAmbientColor3hexySS_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toggleHvac",
+            "printedName": "toggleHvac(isOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC10toggleHvac4isOnySb_tF",
+            "mangledName": "$s18ErikModelFrameworkAAC10toggleHvac4isOnySb_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setHvacSpeed",
+            "printedName": "setHvacSpeed(speed:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC12setHvacSpeed5speedySS_tF",
+            "mangledName": "$s18ErikModelFrameworkAAC12setHvacSpeed5speedySS_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setHvacTemperature",
+            "printedName": "setHvacTemperature(temperature:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC18setHvacTemperature11temperatureySi_tF",
+            "mangledName": "$s18ErikModelFrameworkAAC18setHvacTemperature11temperatureySi_tF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetScene",
+            "printedName": "resetScene()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC10resetSceneyyF",
+            "mangledName": "$s18ErikModelFrameworkAAC10resetSceneyyF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isHotSpotVisible",
+            "printedName": "isHotSpotVisible(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18ErikModelFrameworkAAC16isHotSpotVisibleyySbF",
+            "mangledName": "$s18ErikModelFrameworkAAC16isHotSpotVisibleyySbF",
+            "moduleName": "ErikModelFramework",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18ErikModelFrameworkAAC",
+        "mangledName": "$s18ErikModelFrameworkAAC",
+        "moduleName": "ErikModelFramework",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 192,
+      "length": 11,
+      "value": "\"AppPlugin\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 300,
+      "length": 12,
+      "value": "\"set_camera\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 359,
+      "length": 25,
+      "value": "\"toggle_door_front_right\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 431,
+      "length": 24,
+      "value": "\"toggle_door_front_left\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 502,
+      "length": 24,
+      "value": "\"toggle_door_rear_right\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 573,
+      "length": 23,
+      "value": "\"toggle_door_rear_left\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 643,
+      "length": 23,
+      "value": "\"toggle_door_boot_door\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 734,
+      "length": 16,
+      "value": "\"set_door_state\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 810,
+      "length": 19,
+      "value": "\"toggle_head_lamps\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 889,
+      "length": 19,
+      "value": "\"toggle_light_rear\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 968,
+      "length": 16,
+      "value": "\"toggle_sunroof\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 1044,
+      "length": 16,
+      "value": "\"toggle_ambient\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 1122,
+      "length": 19,
+      "value": "\"ambient_hex_value\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 1201,
+      "length": 20,
+      "value": "\"is_hotspot_visible\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 1281,
+      "length": 16,
+      "value": "\"toggle_ac_flow\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 1359,
+      "length": 18,
+      "value": "\"ac_speed_control\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 1436,
+      "length": 26,
+      "value": "\"ventillation_temperature\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 1509,
+      "length": 13,
+      "value": "\"reset_scene\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 1615,
+      "length": 24,
+      "value": "\"on_rear_lights_toggled\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 1816,
+      "length": 12,
+      "value": "\"areVisible\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 1979,
+      "length": 23,
+      "value": "\"on_head_lamps_toggled\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 2179,
+      "length": 12,
+      "value": "\"areVisible\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 2341,
+      "length": 17,
+      "value": "\"onAcFlowToggled\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 2535,
+      "length": 6,
+      "value": "\"isOn\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 2604,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 2760,
+      "length": 20,
+      "value": "\"onDoorStateChanged\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 2959,
+      "length": 10,
+      "value": "\"doorType\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 3030,
+      "length": 8,
+      "value": "\"isOpen\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 3188,
+      "length": 18,
+      "value": "\"onSunroofToggled\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 3383,
+      "length": 8,
+      "value": "\"isOpen\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 3539,
+      "length": 27,
+      "value": "\"ventilation_temp_feedback\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 3742,
+      "length": 13,
+      "value": "\"temperature\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 3818,
+      "length": 11,
+      "value": "\"colorType\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 3984,
+      "length": 18,
+      "value": "\"onAmbientToggled\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 4179,
+      "length": 6,
+      "value": "\"isOn\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 4248,
+      "length": 9,
+      "value": "\"message\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 4405,
+      "length": 19,
+      "value": "\"onAmbientColorSet\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 4603,
+      "length": 5,
+      "value": "\"hex\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 4757,
+      "length": 17,
+      "value": "\"onCameraChanged\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "Array",
+      "offset": 4891,
+      "length": 12,
+      "value": "[]"
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 5039,
+      "length": 28,
+      "value": "\"onHotspotVisibilityChanged\""
+    },
+    {
+      "filePath": "@__swiftmacro_18ErikModelFramework9AppPlugin5GodotfMm_.swift",
+      "kind": "StringLiteral",
+      "offset": 5244,
+      "length": 9,
+      "value": "\"visible\""
+    },
+    {
+      "filePath": "\/Users\/siddhesh\/Documents\/Godot_Experiment\/ErikModel_Framework\/ErikModelFramework\/ErikModelFramework\/Views\/CarModelView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 811,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}

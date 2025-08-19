@@ -1,0 +1,70 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ErikModelFramework
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import Foundation
+import Swift
+import SwiftGodot
+import SwiftGodotKit
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+
+@_Concurrency.MainActor @preconcurrency public struct CarModelView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init()
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s18ErikModelFramework03CarB4ViewV4bodyQrvp", 0) __
+}
+public enum CarDoor {
+  case FR
+  case FL
+  case RR
+  case RL
+  case BOOT
+  public static func == (a: ErikModelFramework.CarDoor, b: ErikModelFramework.CarDoor) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol ErikModelFrameworkDelegate : AnyObject {
+  func onDoorStateChanged(doorType: Swift.String, isOpen: Swift.Bool)
+  func onSunroofToggled(isOpen: Swift.Bool)
+  func onHeadLightsToggled(isOn: Swift.Bool)
+  func onRearLightsToggled(isOn: Swift.Bool)
+  func onAmbientToggled(isOn: Swift.Bool)
+  func onAmbientColorSet(hex: Swift.String)
+  func onHvacToggled(isOn: Swift.Bool)
+  func onHotspotVisibilityChange(isVisible: Swift.Bool)
+  func onCameraChanged()
+  func onHvacTemperatureChange(temperature: Swift.Int, temperatureType: Swift.String)
+}
+@_hasMissingDesignatedInitializers public class ErikModelFramework {
+  public static var shared: ErikModelFramework.ErikModelFramework
+  weak public var delegate: (any ErikModelFramework.ErikModelFrameworkDelegate)?
+  public static func initializeEngine()
+  @objc deinit
+}
+extension ErikModelFramework.ErikModelFramework {
+  public func exteriorView()
+  public func interiorView()
+  public func toggleDoor(_ door: ErikModelFramework.CarDoor, isOpen: Swift.Bool)
+  public func toggleHeadLights(isOn: Swift.Bool)
+  public func toggleRearLights(isOn: Swift.Bool)
+  public func toggleSunroof(isOn: Swift.Bool)
+}
+extension ErikModelFramework.ErikModelFramework {
+  public func toggleAmbient(isOn: Swift.Bool)
+  public func setAmbientColor(hex: Swift.String)
+  public func toggleHvac(isOn: Swift.Bool)
+  public func setHvacSpeed(speed: Swift.String)
+  public func setHvacTemperature(temperature: Swift.Int)
+  public func resetScene()
+  public func isHotSpotVisible(_ toggle: Swift.Bool)
+}
+extension ErikModelFramework.CarModelView : Swift.Sendable {}
+extension ErikModelFramework.CarDoor : Swift.Equatable {}
+extension ErikModelFramework.CarDoor : Swift.Hashable {}
